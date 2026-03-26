@@ -1,4 +1,5 @@
 # PI-INR Configuration File
+# Version: 1.0.0
 
 # Data paths
 data:
@@ -7,9 +8,10 @@ data:
 
 # Training parameters
 training:
-  batch_points: 15000
-  epochs: 1200
-  learning_rate: 0.0002
+  batch_points: 25000
+  epochs: 1500
+  learning_rate: 0.0005
+  omega_0: 20.0
   random_seed: 42
   device: "cuda"  # or "cpu"
   gradient_clip: 1.0
@@ -17,18 +19,24 @@ training:
 # Loss weights
 loss_weights:
   lambda_edl: 1.0
-  lambda_phys: 0.05
-  lambda_fold: 10.0
+  lambda_edge: 5.0
+  lambda_smooth: 0.1
+  lambda_phys: 0.2
+  lambda_fold_init: 0.1
+  lambda_fold_max: 5.0
   gamma_metric: 10.0
 
-# Thresholds
-thresholds:
+# Evaluation
+evaluation:
+  run_baseline: true
+  compute_dsc: true
   ati_threshold: 0.6
-  uncertainty_percentile: 85
+  ati_smooth_sigma: 1.0
+  ati_calibration: true
 
 # Output
 output:
-  result_dir: "./results/MedIA_Ultimate_Run"
+  result_dir: "./results/MedIA_Ultimate_Run_Final"
   save_interval: 5
   force_rerun: true
-  delete_old_results: false
+  save_metadata_json: true
