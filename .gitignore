@@ -1,0 +1,54 @@
+# Python缓存
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# 虚拟环境
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.env
+.venv
+
+# IDE配置
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# 数据文件 (太大，不上传)
+data/
+*.nii.gz
+*.dcm
+*.mhd
+*.raw
+
+# 结果文件 (太大，不上传)
+results/
+*.csv
+*.xlsx
+*.png
+*.pdf
+*.jpg
+*.jpeg
+*.log
+*.html
+*.nii.gz
+!results/.gitkeep
+
+# Jupyter笔记本缓存
+.ipynb_checkpoints/
+*.ipynb
+
+# 临时文件
+*.tmp
+*.temp
+*.bak
+*.log
