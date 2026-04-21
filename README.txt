@@ -45,14 +45,6 @@ OUTPUT
 Results saved to: ./results/MedIA_Ultimate_Run_Final/
 Figures saved to: ./results/MedIA_Ultimate_Run_Final/MedIA_Paper_Figures/
 
-CITATION
---------
-@article{pi_inr_2026,
-  title={Physics-Geometry Fusion with Uncertainty-Aware Early Warning...},
-  journal={Medical Image Analysis (Under Review)},
-  year={2026}
-}
-
 LICENSE
 -------
 MIT License
