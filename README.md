@@ -144,9 +144,8 @@ results/MedIA_Ultimate_Run_Final/
 If you find this code useful, please cite our paper:
 
 @article{pi_inr_2026,
-  title={Physics-Geometry Fusion with Uncertainty-Aware Early Warning for Dosimetric Decay in Adaptive Radiotherapy via Implicit Neural Representations},
+  title={An Uncertainty-Aware Intelligent Measurement System for Dosimetric Risk Quantification via Physics-Informed Implicit Neural Representations},
   author={Anonymous Authors},
-  journal={Medical Image Analysis (Under Review)},
   year={2026}
 }
 
